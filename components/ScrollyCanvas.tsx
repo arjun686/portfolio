@@ -90,7 +90,7 @@ export default function ScrollyCanvas() {
     resizeCanvas();
 
     return () => window.removeEventListener("resize", resizeCanvas);
-  }, [images, scrollYProgress]);
+  }, [images, scrollYProgress, drawFrame]);
 
   // Scrub through images on scroll
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
@@ -106,7 +106,7 @@ export default function ScrollyCanvas() {
     if (imagesLoaded > 0 && imagesLoaded === FRAME_COUNT) {
       drawFrame(0);
     }
-  }, [imagesLoaded]);
+  }, [imagesLoaded, drawFrame]);
 
   return (
     <div ref={containerRef} className="relative h-[500vh] bg-black">

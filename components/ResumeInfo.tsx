@@ -61,7 +61,7 @@ export default function ResumeInfo() {
                   <span>Feb 2026 - Present</span>
                 </div>
                 <h4 className="text-lg text-white/90">Master of Science (MSc) in Business Analytics</h4>
-                <p className="text-white/60 text-sm">Queen's University Belfast</p>
+                <p className="text-white/60 text-sm">Queen&apos;s University Belfast</p>
               </div>
               <div className="group">
                 <div className="flex justify-between items-start mb-1 text-sm text-white/50">
